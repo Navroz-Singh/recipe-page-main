@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Recipe page</title>
+    <link rel="stylesheet" href="src/output.css">
+
+    <style>
+        .fineline tr:not(:last-child){
+            border-bottom: 1px solid rgb(184, 181, 181);
+        }
+    </style>
+
+</head>
+
+<body class="bg-stone-150 w-screen flex justify-center items-center p-10 phone:p-0">
+
+    <!-- 
+    Calories
+    277kcal
+
+    Carbs
+    0g
+
+    Protein
+    20g
+
+    Fat
+    22g
+    -->
+    
+    <div class="bg-white p-6 max-w-600 rounded-xl flex flex-col gap-6 phone:max-w-screen phone:rounded-none phone:p-0">
+
+        <div class="intro flex flex-col gap-5 ">
+            <div class="image w-full object-cover"><img class="rounded-xl phone:rounded-none " src="assets/image-omelette.jpeg" alt="omelette"></div>
+            <div class="simpom text-4xl font-serif text-Stone-900 phone:px-6">Simple Omelette Recipe</div>
+            <p class="font-outfit text-base text-Stone-900 phone:px-6">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+            <div class="prepbox p-6 bg-Rose-50 phone:mx-6">
+                <div class="preptime font-semibold text-Rose-800 rounded-xl text-xl font-outfit">Preparation time</div>
+                <ul class="py-4 px-6 flex flex-col gap-2">
+                    <li class="list-disc text-Stone-900 font-outfit pl-4"><b>Total</b>: Approximately 10 minutes</li>
+                    <li class="list-disc text-Stone-900 font-outfit pl-4"><b>Preparation</b>: 5 minutes</li>
+                    <li class="list-disc text-Stone-900 font-outfit pl-4"><b>Cooking</b>: 5 minutes</li>
+                </ul>
+            </div>
+        </div>
+
+        <header class="indgred flex flex-col gap-4 phone:px-6">
+            <div class="ind text-2xl font-medium text-Brown-800 font-serif">Ingredients</div>
+            <ul class="px-5 flex flex-col gap-2">
+                <li class="list-disc text-Stone-900 font-outfit pl-4">2-3 large eggs</li>
+                <li class="list-disc text-Stone-900 font-outfit pl-4">Salt, to taste</li>
+                <li class="list-disc text-Stone-900 font-outfit pl-4">Pepper, to taste</li>
+                <li class="list-disc text-Stone-900 font-outfit pl-4">1 tablespoon of butter or oil</li>
+                <li class="list-disc text-Stone-900 font-outfit pl-4">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+            </ul>
+        </header>
+
+        <div class="line h-px w-full bg-stone-150"></div>
+        
+        
+        
+        <main class="indgred flex flex-col gap-4 phone:px-6">
+
+            <div class="ind text-2xl font-medium text-Brown-800 font-serif">Instructions</div>
+            <ol class="px-5 flex flex-col gap-2 font-outfit list-decimal text-Stone-900">
+                <li class=""><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.</li>
+                <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                <li><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+                    the eggs evenly coat the surface.</li>
+                <li><b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the 
+                    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                <li><b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+                    fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                <li><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
+            </ol>
+        </main>
+        
+        <div class="line h-px w-full bg-stone-150"></div>
+        
+        <footer class="indgred flex flex-col gap-4 phone:px-6">
+            <div class="ind text-2xl font-medium text-Brown-800 font-serif">Nutrition</div>
+            <p class="font-outfit text-base text-Stone-900">The table below shows nutritional values per serving without the additional fillings.</p>
+            <table class="font-outfit fineline">
+                <tr>
+                    <td class="py-2 px-4">Calories</td>
+                    <td class="py-2 px-4">277kcal</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4">Carbs</td>
+                    <td class="py-2 px-4">0g</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4">Protein</td>
+                    <td class="py-2 px-4">20g</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4">Fat</td>
+                    <td class="py-2 px-4">22g</td>
+                </tr>
+            </table>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
